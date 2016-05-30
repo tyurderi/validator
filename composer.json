@@ -1,0 +1,11 @@
+{
+    "name": "tyurderi/validator",
+    "description": "simple php form validator",
+    "authors": [
+        {
+            "name": "tyurderi",
+            "email": "tyurderi@yahoo.de"
+        }
+    ],
+    "require": {}
+}
