@@ -1,7 +1,7 @@
 <?php
 
 function validator_rule_required($fields, $value, $params) {
-    return strlen($value) > 0;
+    return !empty($value);
 }
 
 function validator_rule_in($fields, $value, $params) {
@@ -37,7 +37,7 @@ function validator_rule_max_value($fields, $value, $params) {
 }
 
 function validator_rule_matches($fields, $value, $params) {
-    return $value === $fields[$params[0]]->value;
+    return $value === $fields[$params[0]]['value'];
 }
 
 function validator_rule_is($fields, $value, $params) {
