@@ -7,5 +7,6 @@
             "email": "tyurderi@yahoo.de"
         }
     ],
-    "require": {}
+    "require": {},
+    "license": "MIT"
 }
