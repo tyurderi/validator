@@ -16,11 +16,11 @@ $v->addRule('unique_username', function($fields, $value, $params) {
     return true;
 });
 
-$v->add('username', 'tyurderi', 'required|min:3|max:30', array(
-    'required'       => 'The username is required.',
-    'min'            => 'The username should be at least 3 characters long.',
-    'max'            => 'The username should be at most 30 characters long.',
-    'uniqe_username' => 'The username is already in use.'
+$v->add('username', 'tyurderi', 'required|min:3|max:30|unique_username', array(
+    'required'        => 'The username is required.',
+    'min'             => 'The username should be at least 3 characters long.',
+    'max'             => 'The username should be at most 30 characters long.',
+    'unique_username' => 'The username is already in use.'
 ));
 
 $v->validate();
@@ -36,7 +36,7 @@ else
     {
         echo $message, PHP_EOL;
     }
- }
+}
 
 ```
 
